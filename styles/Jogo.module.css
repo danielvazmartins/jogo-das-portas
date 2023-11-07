@@ -1,0 +1,19 @@
+.content {
+
+}
+
+.portas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botao {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+}

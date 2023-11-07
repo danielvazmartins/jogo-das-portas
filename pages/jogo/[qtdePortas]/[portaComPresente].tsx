@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import { atualizarPortas, criarPortas } from "@/functions/portas"
 import Porta from "@/components/Porta"
 import { useRouter } from "next/router"
+import styles from "@/styles/Jogo.module.css"
+import Link from "next/link"
 
 export default function Jogo() {
     const [portas, setPortas] = useState([])
@@ -22,11 +24,13 @@ export default function Jogo() {
 	}
 
 	return (
-		<div style={{
-			display: "flex",
-			flexWrap: "wrap"
-		}}>
-			{renderizarPortas()}
+		<div className={styles.content}>
+			<div className={styles.portas}>
+				{renderizarPortas()}
+			</div>
+			<Link href="/">
+				<span className={styles.botao}>Reiniciar Jogo</span>
+			</Link>
 		</div>
 	)
 }
