@@ -1,0 +1,33 @@
+.gift {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover {
+    background: rgb(5, 73, 5);
+    width: 100px;
+    height: 20px;
+}
+
+.box {
+    background: rgb(44, 95, 44);
+    width: 90px;
+    height: 80px;
+}
+
+.hStrip {
+    height: 10px;
+    width: 90px;
+    background: red;
+    position: absolute;
+    top: 50px;
+}
+
+.vStrip {
+    width: 10px;
+    height: 100px;
+    background: red;
+    position: absolute;
+}

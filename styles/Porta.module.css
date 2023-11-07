@@ -1,0 +1,53 @@
+.area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 200px;
+    height: 310px;
+    margin: 5px;
+}
+
+.estrutura {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    position: relative;
+    border: 5px solid brown;
+    background: #222;
+    border-bottom-width: 0;
+    margin: 15px 15px 0 15px;
+}
+
+.porta {
+    flex-grow: 1;
+    background-color: chocolate;
+    padding: 10px;
+}
+
+.macaneta {
+    display: block;
+    position: absolute;
+    top: 40%;
+    width: 20px;
+    height: 20px;
+    background-color: brown;
+    border-radius: 10px;
+}
+
+.piso {
+    background: #333;
+    height: 20px;
+}
+
+.numero {
+    font-size: 28px;
+    color: burlywood;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+}
+
+.selecionada .estrutura {
+    border: 5px solid yellowgreen;
+    border-bottom-width: 0;
+}
